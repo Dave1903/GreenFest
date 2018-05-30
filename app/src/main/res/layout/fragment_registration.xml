@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/feedbackback"
+    tools:context="com.thedevlopershome.greenfest.RegistrationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/pukkar"
+        android:layout_centerInParent="true"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+         />
+
+    <LinearLayout
+
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_centerInParent="true"
+        android:layout_below="@+id/profile_image"
+         android:paddingBottom="16dp"
+        android:paddingLeft="72dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YOUR Name"
+            android:text=" "
+             android:textSize="24sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="50"
+            app:met_primaryColor="?colorPrimaryDark"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/clgname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Collage Name"
+            android:text=" "
+            android:textSize="24sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="30"
+            app:met_primaryColor="?colorPrimaryDark" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/userbranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YOUR Branch"
+            android:text=" "
+             android:textSize="24sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="30"
+            app:met_primaryColor="?colorPrimaryDark"
+            app:met_singleLineEllipsis="true" />
+
+
+    </LinearLayout>
+
+            <TextView
+                android:id="@+id/requestButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:text="REGISTER ME"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
